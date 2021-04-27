@@ -20,7 +20,7 @@ h1 {
 .container {
   margin: auto;
   width: 80%;
-  /* height: 80%; */
+  height: 80%;
   display: grid;
   border: 1px black solid;
 }
