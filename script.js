@@ -1,16 +1,16 @@
 "use strict";
-const container = document.querySelector(".container");
+const gridContainer = document.querySelector(".grid-container");
 const btn = document.querySelector(".reset");
 let n;
 
 const createGrid = function (n = 32) {
   for (let i = 1; i <= n * n; i++) {
     const div = document.createElement("div");
-    container.appendChild(div).className = "grid-item";
+    gridContainer.appendChild(div).className = "grid-item";
   }
 
-  container.style.gridTemplateRows = `repeat(${n}, 1fr)`;
-  container.style.gridTemplateColumns = `repeat(${n}, 1fr)`;
+  gridContainer.style.gridTemplateRows = `repeat(${n}, 1fr)`;
+  gridContainer.style.gridTemplateColumns = `repeat(${n}, 1fr)`;
 };
 
 const drawLine = () => {
@@ -34,7 +34,7 @@ const cleanGrid = () => {
 
 btn.addEventListener("click", function () {
   // console.log(gridItems);
-  n = prompt("How many squares per side to make the new grid (<= 100)?", 32);
+  n = prompt("Change size (<= 100)", 32);
 
   if (n) {
     cleanGrid();
