@@ -23,8 +23,8 @@ h1 {
 }
 
 .grid-container {
-  width: 800px;
-  height: 800px;
+  width: 500px;
+  height: 500px;
   margin: auto;
   display: grid;
   border: 1px black solid;
